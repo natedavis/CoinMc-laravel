@@ -1,8 +1,8 @@
 {
-    "name": "andskur/coinmc",
-    "description": "CoinMarketCap.com api wrapper for Laravel 5.4",
+    "name": "natedavis/coinmc",
+    "description": "CoinMarketCap.com api wrapper for Laravel 5.6",
     "keywords": ["laravel", "cryptocurrency", "coinmarketcap", "coinmarketcap.com", "bitcoin"] ,
-    "homepage": "https://github.com/andskur/CoinMc-laravel",
+    "homepage": "https://github.com/natedavis/CoinMc-laravel",
     "license": "MIT",
     "authors": [
         {
@@ -20,5 +20,18 @@
             "Andskur\\CoinMc\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+         "branch-alias": {
+             "dev-master": "0.6-dev"
+         },
+        "laravel": {
+            "providers": [
+                "Andskur\\CoinMc\\CoinMcServiceProvider::class,"
+            ],
+            "aliases": {
+                "CoinMc": "Andskur\\CoinMc\\CoinMcFacade::class"
+            }
+         }
+     }
 }
