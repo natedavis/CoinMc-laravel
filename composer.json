@@ -11,13 +11,13 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=7.1",
         "laravel/framework": ">=5.6.0",
         "guzzlehttp/guzzle": "^6.2"
     },
     "autoload": {
         "psr-4": {
-            "Andskur\\CoinMc\\": "src/"
+            "Natedavis\\CoinMc\\": "src/"
         }
     },
     "minimum-stability": "dev",
@@ -27,10 +27,10 @@
          },
         "laravel": {
             "providers": [
-                "Andskur\\CoinMc\\CoinMcServiceProvider::class,"
+                "Natedavis\\CoinMc\\CoinMcServiceProvider::class,"
             ],
             "aliases": {
-                "CoinMc": "Andskur\\CoinMc\\CoinMcFacade::class"
+                "CoinMc": "Natedavis\\CoinMc\\CoinMcFacade::class"
             }
          }
      }
