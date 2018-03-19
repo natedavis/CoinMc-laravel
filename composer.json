@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Natedavis\\CoinMc\\": "src/"
+            "Andskur\\CoinMc\\": "src/"
         }
     },
     "minimum-stability": "dev",
@@ -27,10 +27,10 @@
          },
         "laravel": {
             "providers": [
-                "Natedavis\\CoinMc\\CoinMcServiceProvider::class,"
+                "Andskur\\CoinMc\\CoinMcServiceProvider::class,"
             ],
             "aliases": {
-                "CoinMc": "Natedavis\\CoinMc\\CoinMcFacade::class"
+                "CoinMc": "Andskur\\CoinMc\\CoinMcFacade::class"
             }
          }
      }
